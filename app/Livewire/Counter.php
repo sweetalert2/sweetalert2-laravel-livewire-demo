@@ -20,6 +20,12 @@ class Counter extends Component
             'toast' => true,
             'showConfirmButton' => false,
             'position' => 'top-end',
+            'timer' => 1500,
+            'timerProgressBar' => true,
+            'didOpen' => '(toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }',
         ]);
     }
 
