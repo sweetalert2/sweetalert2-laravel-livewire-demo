@@ -41,8 +41,17 @@ class Counter extends Component
     public function increment(): void
     {
         $this->swalSuccess([
-            'title' => 'Incremented!',
-            'text' => 'Counter has been incremented.',
+            'title' => 'Success!',
+            'text' => 'Your action was successful.',
+            'toast' => true,
+            'showConfirmButton' => false,
+            'position' => 'top-end',
+            'timer' => 1500,
+            'timerProgressBar' => true,
+            'didOpen' => '(toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }',
         ]);
     }
 }
