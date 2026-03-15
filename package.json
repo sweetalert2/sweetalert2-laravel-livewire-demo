@@ -14,12 +14,5 @@
     "build": "vite build",
     "dev": "vite"
   },
-  "prettier": {
-    "printWidth": 120,
-    "semi": false,
-    "singleQuote": true,
-    "quoteProps": "consistent",
-    "trailingComma": "es5"
-  },
   "type": "module"
 }
