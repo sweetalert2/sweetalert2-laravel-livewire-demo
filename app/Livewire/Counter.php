@@ -16,7 +16,7 @@ class Counter extends Component
         $this->count++;
 
         $this->swalSuccess([
-            'title' => 'Count is ' . $this->count,
+            'title' => 'Count is '.$this->count,
             'toast' => true,
             'showConfirmButton' => false,
             'position' => 'top-end',
